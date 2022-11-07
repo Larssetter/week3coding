@@ -139,22 +139,20 @@ console.log("test");
                 
                  
         //13.
-            // simple function 
-            let enoughGroceryMoney = 5; 
+            // simple function to get a length and width etc. 
+            function getTotalLength( length, width) {
 
-            function enoughGroceryMoney(x) {
-
-                if (enoughGroceryMoney > x) {
-
-                    console.log("purchase this now")
-                } else {
-
-                    console.log("do not purchase this now");
+                if (length > 1 && width > 2 ) {
+                  return length * width; 
                 }
-            }   
-                enoughGroceryMoney(10.00);
-
-
+              
+                return 3; //return other if first does not work 
+               }
+              
+               console.log(getTotalLength(4, 8));// returned outcome 
+              
+               console.log(getTotalLength(2, 0));//returned outcome if other 
+              
             
             
 
